@@ -1,3 +1,3 @@
 <img src="/graphical_abstract.png">
 
-# CycleGAN and pix2pix in PyTorch
+# Using CycleGAN and pix2pix in PyTorch for Depth Map Estimation

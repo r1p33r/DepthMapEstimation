@@ -86,6 +86,14 @@ cd pytorch-CycleGAN-and-pix2pix
 
 <img src="/resultados_mapa.png">
 
+- **(a) RGB input Image**
+- **(b) Ground Truth Image**
+- **(c) Depth Map Predicted by CycleGAN**
+- **(d) Depth Map Predicted by Pix2Pix**
+
+# Note:
+**The resulting images from the prediction of depth maps by CycleGAN used the reconstructed ones instead of the generated fake images**.
+
 # Reference / Citation
 
 ```bash

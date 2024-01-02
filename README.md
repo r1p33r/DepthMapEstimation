@@ -84,7 +84,7 @@ cd pytorch-CycleGAN-and-pix2pix
 
 # Qualitative Results
 
-<img src="/graphical_abstract.png">
+<img src="/resultados_mapa.png">
 
 # Reference / Citation
 

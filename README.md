@@ -2,7 +2,7 @@
 
 # Using CycleGAN and pix2pix in PyTorch for Depth Map Estimation
 
-Note: The original code is available at: https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix.
+**Note**: The original code is available at: https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix.
 
 # Prerequisites
 

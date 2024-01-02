@@ -82,6 +82,10 @@ cd pytorch-CycleGAN-and-pix2pix
 - Training settings can be edited in: /options/train_options.py, base_options.py and test_options.py
 - For changes to the model, simply modify the files: /models/cycle_gan_model.py and pix2pix_model.py
 
+# Qualitative Results
+
+<img src="/graphical_abstract.png">
+
 # Reference / Citation
 
 ```bash

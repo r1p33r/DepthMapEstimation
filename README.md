@@ -1,6 +1,7 @@
 
 # CycleGAN and pix2pix in PyTorch
 
+![Logo da Minha Empresa](https://ibb.co/rvrDZ6b)
 
 ## Citation
 If you use this code for your research, please cite our papers.

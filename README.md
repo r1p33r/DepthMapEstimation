@@ -48,3 +48,55 @@ cd pytorch-CycleGAN-and-pix2pix
 ```bash
 !python datasets/make_dataset_aligned.py --dataset-path /media/pc/DATA/Gan-test/dataset_CycleGAN
 ```
+# Training
+
+- **Pix2Pix**:
+
+  Change the --dataroot and --name to your own dataset's path and model's name. Use --gpu_ids 0,1,.. to train on multiple GPUs and --batch_size to change the batch size. Add --direction BtoA if you want to train a model to transfrom from class B to A.
+
+```bash
+!python train.py --dataroot /media/pc/DATA/Gan-test/ablacao/dataset_pix --name pix2pix-nyu --model pix2pix --direction AtoB --display_id -1
+```
+- **CycleGAN**:
+
+```bash
+!python train.py --dataroot /media/pc/DATA/Gan-test/data/database_CycleGAN_nyu_grey --name cyclegan-nyu --model cycle_gan --display_id -1 --continue_train --epoch_count 31
+```
+
+# Test
+
+- **Pix2Pix**
+
+```bash
+!python test.py --dataroot /media/pc/DATA/Gan-test/data/database_CycleGAN_nyu_grey/testA --name pix2pix-nyu --model test --netG unet_256 --direction AtoB --dataset_mode single --norm batch
+```
+
+-  **CycleGAN**
+
+```bash
+!python test.py --dataroot C:/Users/PC/GAN/pytorch-CycleGAN-nyu/teste --name cyclegan-nyu --model cycle_gan --phase test --no_dropout
+```
+
+# Settings
+
+- Training settings can be edited in: /options/train_options.py, base_options.py and test_options.py
+- For changes to the model, simply modify the files: /models/cycle_gan_model.py and pix2pix_model.py
+
+# Reference / Citation
+
+```bash
+@inproceedings{CycleGAN2017,
+  title={Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks},
+  author={Zhu, Jun-Yan and Park, Taesung and Isola, Phillip and Efros, Alexei A},
+  booktitle={Computer Vision (ICCV), 2017 IEEE International Conference on},
+  year={2017}
+}
+
+
+@inproceedings{isola2017image,
+  title={Image-to-Image Translation with Conditional Adversarial Networks},
+  author={Isola, Phillip and Zhu, Jun-Yan and Zhou, Tinghui and Efros, Alexei A},
+  booktitle={Computer Vision and Pattern Recognition (CVPR), 2017 IEEE Conference on},
+  year={2017}
+}
+```
